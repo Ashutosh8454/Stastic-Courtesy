@@ -1,0 +1,152 @@
+
+/*Footer CSS all here*/
+#footer{
+
+	background-color: #2F3F60;
+	display: flex;
+	flex-direction: row;
+	padding: 48px 160px;
+	justify-content: space-between;
+	
+	align-items: center;
+}
+#footer-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#footer-img img{
+   height: 100px;
+}
+#footer-img p{
+   font-size: 20px;
+   font-weight: 600;
+   color: white;
+}
+#footer-text{
+   display: flex;
+   flex-direction: column;
+   margin-top: 0;
+   padding-top: 0;
+}
+.footer-texts {
+display: flex;
+flex-direction: row;
+}
+.footer-texts a{
+   color: white;
+   padding: 4px 8px;
+   margin: 8px 16px;
+   text-decoration: none;
+}
+.footer-icons{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin: 0px 16px;
+}
+.footer-icons img {}
+.footer-icons a{
+   color: white;
+   padding: 0px 4px;
+   margin: 0px;
+   text-decoration: none;
+}
+
+/* <------------------copy-right--------------> */
+   #copy-right{
+	   background-color: #2F3F60;
+	   padding: 8px 160px;
+	   display: flex;
+	   flex-direction: row;
+	   color: rgb(255, 255, 255);
+	   justify-content: space-between;
+   }
+   #copy-right p{}
+   #footer-right-texts{
+	   display: flex;
+	   flex-direction: row;
+   }
+   #footer-right-texts a{
+	   color: white;
+	   text-decoration: none;
+	   margin: 0px 8px;
+   }
+
+/* <---------Responsive------------>*/
+
+@media screen and (max-width: 946px) {
+	#footer{
+		  flex-direction: column;
+		  padding: 0px;
+		  justify-content: center;
+		  align-items: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#footer-img img{
+		height: 50px;
+	 }
+	 #footer-img p{
+		font-size: 16px;
+		font-weight: 600;
+		
+	 }
+
+	 .footer-texts a{
+		color: white;
+		padding: 2px 4px;
+		margin: 4px 8px;
+		font-size: 14px;
+	 }
+
+	 .footer-icons a{
+		
+		padding: 0px 2px;
+		
+	 }
+	 .footer-icons{
+		
+		margin: 0px 8px;
+	 }
+
+
+}
+@media screen and (max-width: 390px)
+{
+	.footer-texts{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-hide{
+		display: none;
+	}
+
+	
+}
+
+@media screen and (max-width: 900px)
+	{
+		#copy-right{
+			          justify-content: center;
+					  align-items: center;
+					  flex-direction: column;
+					  padding: 0px;
+		}
+		
+	}
+
+@media screen and (max-width: 640px)
+	{
+		#copy-right p{
+			font-size: 10px;
+			         
+		}
+		#footer-right-texts a{
+			font-size: 10px;
+		}
+		
+	}
